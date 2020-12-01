@@ -1068,3 +1068,4 @@ Citizen.CreateThread(function()
 	updateAdmins()
 	checkVersionHTTPRequest()
 end)
+--- this code is not 100 percent to me so its here thanks "D"
