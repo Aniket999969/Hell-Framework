@@ -7,6 +7,7 @@ ui_page 'bwh_html/index.html'
 ui_page 'hack.html'
 ui_page "html_radar/radar.html"
 ui_page 'html/ui.html'
+ui_page('html_sound/index.html')
 
 client_script {
     
@@ -40,6 +41,16 @@ client_script {
     'race_config.lua',
     'races_cl.lua',
     'radio_cl.lua',
+    'sound_c.lua',
+    '@grp-core/locale.lua',
+	'locales/br.lua',
+	'locales/en.lua',
+	'locales/fr.lua',
+	'locales/sv.lua',
+	'locales/pl.lua',
+	'config.lua',
+	'client/main.lua'
+
 }  
 
 files {
@@ -128,7 +139,9 @@ files {
 	'html/backgroundwhite.png',
 	'html/styles.css',
 	'html/scripts.js',
-	'html/debounce.min.js'
+    'html/debounce.min.js'
+    'html_sound/index.html',
+    'html_sound/sounds/*.ogg',
 }
 server_script {
     '@mysql-async/lib/MySQL.lua',
@@ -153,6 +166,15 @@ server_script {
     "race_config.lua",
     "port_sv.lua",
     "races_sv.lua",
+    'sound_s.lua',
+    '@grp-core/locale.lua',
+	'locales/br.lua',
+	'locales/en.lua',
+	'locales/fr.lua',
+	'locales/sv.lua',
+	'locales/pl.lua',
+	'config.lua',
+	'server/main.lua'
 }
 
 shared_script 'discord_config.lua'

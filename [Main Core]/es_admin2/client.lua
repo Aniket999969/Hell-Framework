@@ -14,6 +14,7 @@ Citizen.CreateThread(function()
 	GRPCore.PlayerData = GRPCore.GetPlayerData()
 end)
 
+local group = "user"
 local states = {}
 states.frozen = false
 states.frozenPos = nil
