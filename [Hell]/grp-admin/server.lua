@@ -11,7 +11,7 @@ RegisterServerEvent('admin:setGroup')
 AddEventHandler('admin:setGroup', function(target, rank)
     local source = source
     TriggerEvent("es:setPlayerData", target.src, "group", rank, function(response, success)
-        TriggerClientEvent('es_admin:setGroup', target.src, rank)
+        TriggerClientEvent('admin:setGroup', target.src, rank)
         TriggerClientEvent('DoLongHudText', source, "Set " .. target.src .. "'s rank to " .. rank .. "!")
     end)
 end)
